@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build and run",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "library_borrow.c",
+                "-o",
+                "library_borrow.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task to compile C program."
+        }
+    ]
+}
