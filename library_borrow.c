@@ -62,11 +62,11 @@ int main() {
     // Get student information
     printf("Enter your name: ");
     fgets(student.name, sizeof(student.name), stdin);
-    student.name[strcspn(student.name, "\n")] = 0; // Remove newline character
+    student.name[strcspn(student.name, "\n")] = 0; 
 
     printf("Enter your student ID: ");
     fgets(student.studentID, sizeof(student.studentID), stdin);
-    student.studentID[strcspn(student.studentID, "\n")] = 0; // Remove newline character
+    student.studentID[strcspn(student.studentID, "\n")] = 0; 
 
     // Display available books and allow the student to borrow
     displayBooks(books, 3);
